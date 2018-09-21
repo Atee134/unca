@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace datingApp.API.Migrations
+namespace DatingApp.API.Migrations
 {
     public partial class AddedPublicId : Migration
     {
@@ -8,7 +8,7 @@ namespace datingApp.API.Migrations
         {
             migrationBuilder.AddColumn<string>(
                 name: "PublicId",
-                table: "Photo",
+                table: "Photos",
                 nullable: true);
         }
 
@@ -16,7 +16,7 @@ namespace datingApp.API.Migrations
         {
             migrationBuilder.DropColumn(
                 name: "PublicId",
-                table: "Photo");
+                table: "Photos");
         }
     }
 }
