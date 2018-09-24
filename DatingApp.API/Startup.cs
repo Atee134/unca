@@ -65,7 +65,7 @@ namespace datingApp.API
         {
             if (env.IsDevelopment())
             {
-                app.UseDeveloperExceptionPage();
+               // app.UseDeveloperExceptionPage();
             }
             else
             {
