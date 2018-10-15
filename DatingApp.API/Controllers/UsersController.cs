@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using AutoMapper;
 using DatingApp.API.Data;
 using DatingApp.API.Dtos;
+using DatingApp.API.Helpers;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -15,6 +16,7 @@ namespace DatingApp.API.Controllers
     [Authorize]
     [Route("api/[controller]")]
     [ApiController]
+   // [ServiceFilter(typeof(LogUserActivity))] TODO doesnt work for some reason, client says cors error
     public class UsersController : ControllerBase
     {
         private readonly IDatingRepository _repo;
